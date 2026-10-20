@@ -1,466 +1,570 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Implantare Odontologia. Cuidado, atenção e tecnologia para a saúde do seu sorriso.">
+  <meta
+    name="description"
+    content="Implantare Odontologia. Cuidado, atenção e tecnologia para a saúde do seu sorriso."
+  >
 
-    <title>Implantare Odontologia | Seu sorriso merece cuidado</title>
+  <title>Implantare Odontologia | Seu sorriso merece cuidado</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
 
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
 
-    <!-- CABEÇALHO -->
-    <header class="cabecalho" id="inicio">
-        <div class="container navegacao">
+  <!-- CABEÇALHO -->
+  <header class="cabecalho" id="inicio">
+    <div class="container navegacao">
 
-            <a href="#inicio" class="logo">
-                <img src="assets/implantarelogo.png" alt="Implantare Odontologia">
+      <a href="#inicio" class="logo">
+        <img src="assets/implantarelogo.png" alt="Implantare Odontologia">
+      </a>
+
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+      <label for="menu-toggle" class="menu-icone" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="menu">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">A clínica</a>
+        <a href="#atendimento">Atendimento</a>
+        <a href="#tratamentos">Tratamentos</a>
+        <a href="#agendamento" class="menu-botao">Agendar consulta</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- APRESENTAÇÃO PRINCIPAL -->
+    <section class="hero">
+      <div class="container hero-grid">
+
+        <div class="hero-conteudo revelar">
+          <span class="etiqueta">IMPLANTARE ODONTOLOGIA</span>
+
+          <h1>
+            Seu sorriso merece
+            <span>um cuidado especial.</span>
+          </h1>
+
+          <p class="hero-descricao">
+            Odontologia com atenção, tecnologia e cuidado
+            para proporcionar uma experiência acolhedora
+            em cada etapa.
+          </p>
+
+          <div class="hero-acoes">
+            <a href="#tratamentos" class="botao botao-principal">
+              Conheça nossos tratamentos <span>↗</span>
             </a>
 
-            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <a href="#sobre" class="botao botao-secundario">
+              Conheça a clínica
+            </a>
+          </div>
 
-            <label for="menu-toggle" class="menu-icone" aria-label="Abrir menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-
-            <nav class="menu">
-                <a href="#inicio">Início</a>
-                <a href="#sobre">A clínica</a>
-                <a href="#atendimento">Atendimento</a>
-                <a href="#tratamentos">Tratamentos</a>
-                <a href="#contato" class="menu-botao">Agendar consulta</a>
-            </nav>
-
+          <div class="hero-assinatura">
+            <span class="assinatura-ponto"></span>
+            <p>Cuidado individualizado para o seu sorriso.</p>
+          </div>
         </div>
-    </header>
 
-    <main>
+        <div class="hero-visual revelar">
+          <div class="hero-video video-moldura">
 
-        <!-- APRESENTAÇÃO PRINCIPAL -->
-        <section class="hero">
-            <div class="container hero-grid">
+            <video
+              autoplay
+              muted
+              loop
+              playsinline
+              preload="metadata"
+              poster="assets/imagens/dentista.jpg"
+              aria-label="Dentista conversando com paciente"
+            >
+              <source
+                src="assets/imagens/videos/dentista-conversando.mp4"
+                type="video/mp4"
+              >
+              Seu navegador não suporta vídeos.
+            </video>
 
-                <div class="hero-conteudo revelar">
-                    <span class="etiqueta">IMPLANTARE ODONTOLOGIA</span>
+            <div class="video-legenda">
+              <span class="legenda-indicador"></span>
 
-                    <h1>
-                        Seu sorriso merece
-                        <span>um cuidado especial.</span>
-                    </h1>
-
-                    <p class="hero-descricao">
-                        Odontologia com atenção, tecnologia e cuidado
-                        para proporcionar uma experiência acolhedora
-                        em cada etapa.
-                    </p>
-
-                    <div class="hero-acoes">
-                        <a href="#tratamentos" class="botao botao-principal">
-                            Conheça nossos tratamentos <span>↗</span>
-                        </a>
-
-                        <a href="#sobre" class="botao botao-secundario">
-                            Conheça a clínica
-                        </a>
-                    </div>
-
-                    <div class="hero-assinatura">
-                        <span class="assinatura-ponto"></span>
-                        <p>Cuidado individualizado para o seu sorriso.</p>
-                    </div>
-                </div>
-
-                <div class="hero-visual revelar">
-                    <div class="hero-video video-moldura">
-
-                        <video autoplay muted loop playsinline preload="metadata"
-                            poster="assets/imagens/dentista.jpg"
-                            aria-label="Dentista conversando com paciente">
-
-                            <source src="assets/imagens/videos/dentista-conversando.mp4" type="video/mp4">
-
-                            Seu navegador não suporta vídeos.
-                        </video>
-
-                        <div class="video-legenda">
-                            <span class="legenda-indicador"></span>
-
-                            <div>
-                                <strong>Um sorriso começa pelo cuidado.</strong>
-                                <p>Atenção em cada etapa do atendimento.</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
+              <div>
+                <strong>Um sorriso começa pelo cuidado.</strong>
+                <p>Atenção em cada etapa do atendimento.</p>
+              </div>
             </div>
-        </section>
 
-        <!-- FAIXA INSTITUCIONAL -->
-        <section class="faixa-institucional">
-            <div class="container faixa-conteudo">
-                <span>Odontologia com atenção</span>
-                <span class="faixa-separador">✦</span>
-                <span>Cuidado em cada detalhe</span>
-                <span class="faixa-separador">✦</span>
-                <span>Tecnologia e planejamento</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FAIXA INSTITUCIONAL -->
+    <section class="faixa-institucional">
+      <div class="container faixa-conteudo">
+        <span>Odontologia com atenção</span>
+        <span class="faixa-separador">✦</span>
+        <span>Cuidado em cada detalhe</span>
+        <span class="faixa-separador">✦</span>
+        <span>Tecnologia e planejamento</span>
+      </div>
+    </section>
+
+    <!-- SOBRE A CLÍNICA -->
+    <section class="secao sobre" id="sobre">
+      <div class="container sobre-grid">
+
+        <div class="sobre-imagem revelar">
+          <img
+            src="assets/imagens/dentista.jpg"
+            alt="Profissional da área odontológica"
+            loading="lazy"
+          >
+
+          <div class="sobre-detalhe">
+            <span class="sobre-icone">✦</span>
+            <div>
+              <strong>Seu sorriso importa.</strong>
+              <p>Cuidado e atenção em cada atendimento.</p>
             </div>
-        </section>
+          </div>
+        </div>
 
-        <!-- SOBRE A CLÍNICA -->
-        <section class="secao sobre" id="sobre">
-            <div class="container sobre-grid">
+        <div class="sobre-conteudo revelar">
+          <span class="etiqueta">CONHEÇA A IMPLANTARE</span>
 
-                <div class="sobre-imagem revelar">
-                    <img src="assets/imagens/dentista.jpg"
-                        alt="Profissional da área odontológica"
-                        loading="lazy">
+          <h2>
+            Cuidar do sorriso é
+            <span>cuidar de você.</span>
+          </h2>
 
-                    <div class="sobre-detalhe">
-                        <span class="sobre-icone">✦</span>
-                        <div>
-                            <strong>Seu sorriso importa.</strong>
-                            <p>Cuidado e atenção em cada atendimento.</p>
-                        </div>
-                    </div>
-                </div>
+          <p>
+            Acreditamos que uma boa experiência odontológica
+            começa com escuta, atenção e respeito às
+            necessidades de cada paciente.
+          </p>
 
-                <div class="sobre-conteudo revelar">
-                    <span class="etiqueta">CONHEÇA A IMPLANTARE</span>
+          <p>
+            Nosso propósito é oferecer um atendimento
+            acolhedor, com orientação clara e atenção
+            aos detalhes durante cada etapa do cuidado.
+          </p>
 
-                    <h2>
-                        Cuidar do sorriso é
-                        <span>cuidar de você.</span>
-                    </h2>
+          <a href="#atendimento" class="link-seta">
+            Conheça nossa proposta →
+          </a>
+        </div>
 
-                    <p>
-                        Acreditamos que uma boa experiência odontológica
-                        começa com escuta, atenção e respeito às
-                        necessidades de cada paciente.
-                    </p>
+      </div>
+    </section>
 
-                    <p>
-                        Nosso propósito é oferecer um atendimento
-                        acolhedor, com orientação clara e atenção
-                        aos detalhes durante cada etapa do cuidado.
-                    </p>
+    <!-- ATENDIMENTO -->
+    <section class="secao secao-azul-claro" id="atendimento">
+      <div class="container bloco-video-grid">
 
-                    <a href="#atendimento" class="link-seta">
-                        Conheça nossa proposta →
-                    </a>
-                </div>
+        <div class="bloco-texto revelar">
+          <span class="etiqueta">ATENÇÃO INDIVIDUAL</span>
 
-            </div>
-        </section>
+          <h2>
+            Cuidado em
+            <span>cada detalhe.</span>
+          </h2>
 
-        <!-- ATENDIMENTO -->
-        <section class="secao secao-azul-claro" id="atendimento">
-            <div class="container bloco-video-grid">
+          <p>
+            Cada paciente tem necessidades próprias.
+            Por isso, a avaliação individual é importante
+            para orientar os cuidados com a saúde bucal.
+          </p>
 
-                <div class="bloco-texto revelar">
-                    <span class="etiqueta">ATENÇÃO INDIVIDUAL</span>
+          <p>
+            Nosso compromisso é oferecer atenção durante
+            o atendimento, esclarecendo dúvidas e ajudando
+            você a compreender as possibilidades de cuidado.
+          </p>
 
-                    <h2>
-                        Cuidado em
-                        <span>cada detalhe.</span>
-                    </h2>
+          <a href="#agendamento" class="botao botao-principal">
+            Entre em contato <span>↗</span>
+          </a>
+        </div>
 
-                    <p>
-                        Cada paciente tem necessidades próprias.
-                        Por isso, a avaliação individual é importante
-                        para orientar os cuidados com a saúde bucal.
-                    </p>
+        <div class="bloco-video revelar">
+          <div class="video-moldura">
+            <video muted loop playsinline preload="metadata" controls>
+              <source
+                src="assets/imagens/videos/dentista-examinando.mp4"
+                type="video/mp4"
+              >
+              Seu navegador não suporta vídeos.
+            </video>
+          </div>
 
-                    <p>
-                        Nosso compromisso é oferecer atenção durante
-                        o atendimento, esclarecendo dúvidas e ajudando
-                        você a compreender as possibilidades de cuidado.
-                    </p>
+          <span class="video-numero">01 — ATENDIMENTO</span>
+        </div>
 
-                    <a href="#contato" class="botao botao-principal">
-                        Entre em contato <span>↗</span>
-                    </a>
-                </div>
+      </div>
+    </section>
 
-                <div class="bloco-video revelar">
-                    <div class="video-moldura">
-                        <video muted loop playsinline preload="metadata" controls>
-                            <source src="assets/imagens/videos/dentista-examinando.mp4" type="video/mp4">
-                            Seu navegador não suporta vídeos.
-                        </video>
-                    </div>
+    <!-- ACOLHIMENTO -->
+    <section class="secao acolhimento">
+      <div class="container bloco-video-grid bloco-invertido">
 
-                    <span class="video-numero">01 — ATENDIMENTO</span>
-                </div>
+        <div class="bloco-video revelar">
+          <div class="video-moldura">
+            <video muted loop playsinline preload="metadata" controls>
+              <source
+                src="assets/imagens/videos/recepcao-clinica.mp4"
+                type="video/mp4"
+              >
+              Seu navegador não suporta vídeos.
+            </video>
+          </div>
 
-            </div>
-        </section>
+          <span class="video-numero">02 — ACOLHIMENTO</span>
+        </div>
 
-        <!-- ACOLHIMENTO -->
-        <section class="secao acolhimento">
-            <div class="container bloco-video-grid bloco-invertido">
+        <div class="bloco-texto revelar">
+          <span class="etiqueta">UMA EXPERIÊNCIA ACOLHEDORA</span>
 
-                <div class="bloco-video revelar">
-                    <div class="video-moldura">
-                        <video muted loop playsinline preload="metadata" controls>
-                            <source src="assets/imagens/videos/recepcao-clinica.mp4" type="video/mp4">
-                            Seu navegador não suporta vídeos.
-                        </video>
-                    </div>
+          <h2>
+            Você merece se
+            <span>sentir à vontade.</span>
+          </h2>
 
-                    <span class="video-numero">02 — ACOLHIMENTO</span>
-                </div>
+          <p>
+            Um atendimento atencioso começa com acolhimento,
+            escuta e respeito às necessidades de cada pessoa.
+          </p>
 
-                <div class="bloco-texto revelar">
-                    <span class="etiqueta">UMA EXPERIÊNCIA ACOLHEDORA</span>
+          <p>
+            Queremos que você se sinta confortável para
+            conversar, esclarecer suas dúvidas e conhecer
+            os cuidados indicados para sua saúde bucal.
+          </p>
 
-                    <h2>
-                        Você merece se
-                        <span>sentir à vontade.</span>
-                    </h2>
+          <a href="#agendamento" class="link-seta">
+            Fale com a Implantare →
+          </a>
+        </div>
 
-                    <p>
-                        Um atendimento atencioso começa com acolhimento,
-                        escuta e respeito às necessidades de cada pessoa.
-                    </p>
+      </div>
+    </section>
 
-                    <p>
-                        Queremos que você se sinta confortável para
-                        conversar, esclarecer suas dúvidas e conhecer
-                        os cuidados indicados para sua saúde bucal.
-                    </p>
+    <!-- TECNOLOGIA -->
+    <section class="secao secao-tecnologia">
+      <div class="container tecnologia-grid">
 
-                    <a href="#contato" class="link-seta">
-                        Fale com a Implantare →
-                    </a>
-                </div>
+        <div class="tecnologia-conteudo revelar">
+          <span class="etiqueta etiqueta-clara">
+            PLANEJAMENTO ODONTOLÓGICO
+          </span>
 
-            </div>
-        </section>
+          <h2>
+            Tecnologia a favor
+            <span>do seu sorriso.</span>
+          </h2>
 
-        <!-- TECNOLOGIA -->
-        <section class="secao secao-tecnologia">
-            <div class="container tecnologia-grid">
+          <p>
+            Os exames de imagem podem auxiliar na avaliação
+            e no planejamento dos tratamentos odontológicos,
+            conforme a necessidade de cada paciente.
+          </p>
 
-                <div class="tecnologia-conteudo revelar">
-                    <span class="etiqueta etiqueta-clara">
-                        PLANEJAMENTO ODONTOLÓGICO
-                    </span>
+          <p>
+            A escolha dos exames e dos procedimentos depende
+            da avaliação realizada pelo profissional.
+          </p>
 
-                    <h2>
-                        Tecnologia a favor
-                        <span>do seu sorriso.</span>
-                    </h2>
+          <a href="#agendamento" class="botao botao-branco">
+            Saiba mais <span>↗</span>
+          </a>
+        </div>
 
-                    <p>
-                        Os exames de imagem podem auxiliar na avaliação
-                        e no planejamento dos tratamentos odontológicos,
-                        conforme a necessidade de cada paciente.
-                    </p>
+        <div class="tecnologia-video revelar">
+          <div class="video-moldura video-moldura-clara">
+            <video muted loop playsinline preload="metadata" controls>
+              <source
+                src="assets/imagens/videos/dentista-radiografia.mp4"
+                type="video/mp4"
+              >
+              Seu navegador não suporta vídeos.
+            </video>
+          </div>
 
-                    <p>
-                        A escolha dos exames e dos procedimentos depende
-                        da avaliação realizada pelo profissional.
-                    </p>
+          <span class="video-numero video-numero-claro">
+            03 — TECNOLOGIA
+          </span>
+        </div>
 
-                    <a href="#contato" class="botao botao-branco">
-                        Saiba mais <span>↗</span>
-                    </a>
-                </div>
+      </div>
+    </section>
 
-                <div class="tecnologia-video revelar">
-                    <div class="video-moldura video-moldura-clara">
-                        <video muted loop playsinline preload="metadata" controls>
-                            <source src="assets/imagens/videos/dentista-radiografia.mp4" type="video/mp4">
-                            Seu navegador não suporta vídeos.
-                        </video>
-                    </div>
+    <!-- TRATAMENTOS -->
+    <section class="secao tratamentos" id="tratamentos">
+      <div class="container">
 
-                    <span class="video-numero video-numero-claro">
-                        03 — TECNOLOGIA
-                    </span>
-                </div>
+        <div class="secao-cabecalho revelar">
+          <span class="etiqueta">CUIDADO COM SEU SORRISO</span>
 
-            </div>
-        </section>
+          <h2>
+            Conheça nossas
+            <span>áreas de cuidado.</span>
+          </h2>
 
-        <!-- TRATAMENTOS -->
-        <section class="secao tratamentos" id="tratamentos">
-            <div class="container">
+          <p>
+            Converse com nossa equipe para conhecer os
+            tratamentos disponíveis e saber qual avaliação
+            é adequada para suas necessidades.
+          </p>
+        </div>
 
-                <div class="secao-cabecalho revelar">
-                    <span class="etiqueta">CUIDADO COM SEU SORRISO</span>
+        <div class="tratamentos-grid">
 
-                    <h2>
-                        Conheça nossas
-                        <span>áreas de cuidado.</span>
-                    </h2>
-
-                    <p>
-                        Converse com nossa equipe para conhecer os
-                        tratamentos disponíveis e saber qual avaliação
-                        é adequada para suas necessidades.
-                    </p>
-                </div>
-
-                <div class="tratamentos-grid">
-
-                    <article class="tratamento-card revelar">
-                        <span class="tratamento-icone">✦</span>
-                        <h3>Prevenção</h3>
-                        <p>
-                            Cuidados preventivos e orientações para
-                            manter a saúde bucal.
-                        </p>
-                        <a href="#contato">Saiba mais →</a>
-                    </article>
-
-                    <article class="tratamento-card revelar">
-                        <span class="tratamento-icone">◈</span>
-                        <h3>Estética dental</h3>
-                        <p>
-                            Conheça as possibilidades de cuidado
-                            estético para o seu sorriso.
-                        </p>
-                        <a href="#contato">Saiba mais →</a>
-                    </article>
-
-                    <article class="tratamento-card revelar">
-                        <span class="tratamento-icone">◇</span>
-                        <h3>Implantodontia</h3>
-                        <p>
-                            Avaliação individual para conhecer
-                            as possibilidades de reabilitação oral.
-                        </p>
-                        <a href="#contato">Saiba mais →</a>
-                    </article>
-
-                </div>
-
-                <p class="nota-tratamentos">
-                    Os serviços devem ser confirmados com a clínica
-                    antes da publicação deste site.
-                </p>
-
-            </div>
-        </section>
-
-        <!-- CHAMADA PARA CONTATO -->
-        <section class="secao chamada-contato" id="contato">
-            <div class="container chamada-conteudo revelar">
-
-                <span class="etiqueta etiqueta-clara">
-                    ESTAMOS AQUI PARA VOCÊ
-                </span>
-
-                <h2>
-                    Seu próximo passo para cuidar
-                    <span>do seu sorriso começa aqui.</span>
-                </h2>
-
-                <p>
-                    Entre em contato para tirar dúvidas e consultar
-                    a disponibilidade de horários.
-                </p>
-
-                <!-- Troque o número pelo WhatsApp real da clínica -->
-                <a
-                    href="https://wa.me/5583999999999"
-                    class="botao botao-branco"
-                    target="_blank"
-                    rel="noopener noreferrer">
-
-                    Falar pelo WhatsApp <span>↗</span>
-                </a>
-
-            </div>
-        </section>
-
-    </main>
-
-    <!-- RODAPÉ -->
-    <footer class="rodape">
-        <div class="container rodape-conteudo">
-
-            <a href="#inicio" class="logo logo-rodape">
-                <img src="assets/implantarelogo.png" alt="Implantare Odontologia">
-            </a>
-
+          <article class="tratamento-card revelar">
+            <span class="tratamento-icone">✦</span>
+            <h3>Prevenção</h3>
             <p>
-                Implantare Odontologia — Cuidado e atenção para o seu sorriso.
+              Cuidados preventivos e orientações para
+              manter a saúde bucal.
             </p>
+            <a href="#agendamento">Saiba mais →</a>
+          </article>
 
-            <a href="#inicio" class="voltar-topo">Voltar ao início ↑</a>
+          <article class="tratamento-card revelar">
+            <span class="tratamento-icone">◈</span>
+            <h3>Estética dental</h3>
+            <p>
+              Conheça as possibilidades de cuidado
+              estético para o seu sorriso.
+            </p>
+            <a href="#agendamento">Saiba mais →</a>
+          </article>
+
+          <article class="tratamento-card revelar">
+            <span class="tratamento-icone">◇</span>
+            <h3>Implantodontia</h3>
+            <p>
+              Avaliação individual para conhecer
+              as possibilidades de reabilitação oral.
+            </p>
+            <a href="#agendamento">Saiba mais →</a>
+          </article>
 
         </div>
 
-        <div class="container rodape-final">
-            <p>© <span id="ano"></span> Implantare Odontologia. Todos os direitos reservados.</p>
+        <p class="nota-tratamentos">
+          Os serviços devem ser confirmados com a clínica
+          antes da publicação deste site.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- AGENDAMENTO -->
+    <section class="agendamento" id="agendamento">
+      <div class="agendamento-container">
+
+        <div class="agendamento-info">
+          <span class="agendamento-tag">CUIDAMOS DO SEU SORRISO</span>
+
+          <h2>Agende sua consulta</h2>
+
+          <p>
+            Preencha os dados abaixo para solicitar seu agendamento.
+            Nossa equipe entrará em contato para confirmar a disponibilidade.
+          </p>
+
+          <div class="agendamento-destaque">
+            <span>✓</span>
+            <p>Atendimento acolhedor e personalizado.</p>
+          </div>
+
+          <div class="agendamento-destaque">
+            <span>✓</span>
+            <p>Escolha o tratamento e o melhor dia para você.</p>
+          </div>
         </div>
-    </footer>
 
-    <!-- BOTÃO FLUTUANTE DO WHATSAPP -->
-    <a
-        href="https://wa.me/5583999999999"
-        class="whatsapp-flutuante"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Falar com a clínica pelo WhatsApp">
+        <form id="formAgendamento" class="agendamento-form">
 
-        WhatsApp
-    </a>
+          <div class="campo">
+            <label for="nome">Nome completo *</label>
+            <input
+              type="text"
+              id="nome"
+              name="nome"
+              placeholder="Digite seu nome"
+              autocomplete="name"
+              required
+            >
+          </div>
 
-    <script>
-        // Atualiza automaticamente o ano do rodapé.
-        document.getElementById("ano").textContent =
-            new Date().getFullYear();
+          <div class="campo">
+            <label for="telefone">WhatsApp *</label>
+            <input
+              type="tel"
+              id="telefone"
+              name="telefone"
+              placeholder="(83) 99999-9999"
+              autocomplete="tel"
+              required
+            >
+          </div>
 
-        // Fecha o menu mobile após clicar em um link.
-        const menuToggle = document.getElementById("menu-toggle");
-        const linksMenu = document.querySelectorAll(".menu a");
+          <div class="campo">
+            <label for="tratamento">Tratamento desejado *</label>
 
-        linksMenu.forEach(function (link) {
-            link.addEventListener("click", function () {
-                menuToggle.checked = false;
-            });
-        });
+            <select id="tratamento" name="tratamento" required>
+              <option value="">Selecione uma opção</option>
+              <option value="Avaliação odontológica">Avaliação odontológica</option>
+              <option value="Limpeza dentária">Limpeza dentária</option>
+              <option value="Clareamento dental">Clareamento dental</option>
+              <option value="Aparelho ortodôntico">Aparelho ortodôntico</option>
+              <option value="Implantes dentários">Implantes dentários</option>
+              <option value="Tratamento de canal">Tratamento de canal</option>
+              <option value="Odontopediatria">Odontopediatria</option>
+              <option value="Outro tratamento">Outro tratamento</option>
+            </select>
+          </div>
 
-        // Anima os elementos quando aparecem na tela.
-        const elementos = document.querySelectorAll(".revelar");
+          <div class="campo campo-duplo">
+            <div>
+              <label for="data">Data preferida *</label>
+              <input type="date" id="data" name="data" required>
+            </div>
 
-        if ("IntersectionObserver" in window) {
-            const observador = new IntersectionObserver(function (entradas) {
-                entradas.forEach(function (entrada) {
-                    if (entrada.isIntersecting) {
-                        entrada.target.classList.add("visivel");
-                        observador.unobserve(entrada.target);
-                    }
-                });
-            }, {
-                threshold: 0.12
-            });
+            <div>
+              <label for="periodo">Melhor período *</label>
+              <select id="periodo" name="periodo" required>
+                <option value="">Selecione</option>
+                <option value="Manhã">Manhã</option>
+                <option value="Tarde">Tarde</option>
+              </select>
+            </div>
+          </div>
 
-            elementos.forEach(function (elemento) {
-                observador.observe(elemento);
-            });
-        } else {
-            elementos.forEach(function (elemento) {
-                elemento.classList.add("visivel");
-            });
-        }
-    </script>
+          <div class="campo">
+            <label for="observacoes">Observações (opcional)</label>
+            <textarea
+              id="observacoes"
+              name="observacoes"
+              rows="3"
+              placeholder="Alguma preferência para o atendimento?"
+            ></textarea>
+          </div>
+
+          <label class="campo-consentimento">
+            <input type="checkbox" id="consentimento" required>
+            <span>
+              Autorizo o uso destes dados para contato sobre esta
+              solicitação de agendamento.
+            </span>
+          </label>
+
+          <button type="submit" class="botao-agendamento">
+            Solicitar agendamento
+          </button>
+
+          <p class="agendamento-aviso">
+            O envio é uma solicitação. A consulta só estará confirmada
+            após o retorno da equipe.
+          </p>
+
+          <p id="mensagemAgendamento" role="status" aria-live="polite"></p>
+
+        </form>
+      </div>
+    </section>
+
+    <!-- CHAMADA PARA CONTATO -->
+    <section class="secao chamada-contato" id="contato">
+      <div class="container chamada-conteudo revelar">
+
+        <span class="etiqueta etiqueta-clara">
+          ESTAMOS AQUI PARA VOCÊ
+        </span>
+
+        <h2>
+          Seu próximo passo para cuidar
+          <span>do seu sorriso começa aqui.</span>
+        </h2>
+
+        <p>
+          Entre em contato para tirar dúvidas e consultar
+          a disponibilidade de horários.
+        </p>
+
+        <!-- SUBSTITUA PELO WHATSAPP OFICIAL DA CLÍNICA -->
+        <a
+          href="https://wa.me/5583999999999"
+          class="botao botao-branco"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Falar pelo WhatsApp <span>↗</span>
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="rodape">
+
+    <div class="container rodape-conteudo">
+      <a href="#inicio" class="logo logo-rodape">
+        <img src="assets/implantarelogo.png" alt="Implantare Odontologia">
+      </a>
+
+      <p>
+        Implantare Odontologia — Cuidado e atenção para o seu sorriso.
+      </p>
+
+      <a href="#inicio" class="voltar-topo">Voltar ao início ↑</a>
+    </div>
+
+    <div class="container rodape-final">
+      <p>
+        © <span id="ano"></span> Implantare Odontologia.
+        Todos os direitos reservados.
+      </p>
+    </div>
+
+  </footer>
+
+  <!-- BOTÃO FLUTUANTE DO WHATSAPP -->
+  <a
+    href="https://wa.me/5583999999999"
+    class="whatsapp-flutuante"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Falar com a clínica pelo WhatsApp"
+  >
+    WhatsApp
+  </a>
 
 </body>
 </html>
